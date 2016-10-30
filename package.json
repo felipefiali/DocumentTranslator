@@ -2,19 +2,20 @@
   "name": "DocumentTranslatorApp",
   "version": "1.0.0",
   "description": "A sample NodeJS app to use Bluemix and Watson Services",
-   "dependencies": {
+  "dependencies": {
     "body-parser": "~1.14.1",
     "express": "~4.13.3",
     "express-rate-limit": "^2.0.2",
     "express-secure-only": "^0.2.1",
     "helmet": "^0.15.0",
-    "watson-developer-cloud": "^1.0.6"
+    "multer": "^1.2.0",
+    "watson-developer-cloud": "^2.2.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/felipefiali/DocumentTranslator"
   },
-  "author": "Felipe Fiali", 
+  "author": "Felipe Fiali",
   "license": "GPL-3.0",
   "scripts": {
     "start": "node app.js"

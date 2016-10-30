@@ -1,6 +1,46 @@
 <html>
-	<head></head>
-	<body>
-		<marquee>My first Node.js application wooo</marquee>
+	<head>
+		<link href="css/style.css" rel="stylesheet">		
+		<link href="css/watson-bootstrap-style.css" rel="stylesheet">
+		<script src="js/fileHandler.js" type="text/javascript"></script>
+		<script src="js/documentConversionHandler.js" type="text/javascript"></script>
+	</head>
+	<body>	
+	
+
+
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">          
+          <div class="navbar-header">
+            <div class="navbar-brand no-underline"><a>Document translator</a></div>
+          </div>         
+        </div>
+      </div>   
+      <h1>Choose your file:</h1>
+      <form className="upload-form" id="fileupload" method='POST' encType='multipart/form-data' action='/upload'>
+                <div className="upload--container dropzone">
+                    <div className="upload--description">
+                        Upload a pdf, Microsoft™ Word(.doc, .docx) or HTML document.
+                        (The max file size is 1 MB.)
+                    </div>
+
+                    <div className="upload--file-chooser base--label">
+                        <label htmlFor="file-chooser-input"
+                               className="upload--file-chooser-btn base--button">Choose your file</label>
+                        <span className="upload--file-chooser-name"></span>
+                        <input id="fileInput" type="file" style={{display: "none"}}
+                           accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, .html"
+                           title="Choose an file to upload" name="document" onChange="handleFile(this.form);" ref="file" />
+                    </div>
+                </div>                
+            </form>  
+            <br>
+            <div class="overflow-with-scroll">
+            	<pre>
+            		<code className="" id="conversionResult" style="display: none;" >
+            			
+            		</code>
+            	</pre>
+            </div>
 	</body>
 </html>
