@@ -12,5 +12,4 @@ function handleFile(formElement) {
 		.then(function(documentId) {
 			callDocumentConverter(documentId);
 		});
-	
 }

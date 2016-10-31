@@ -1,6 +1,6 @@
 .overflow-with-scroll {
 	overflow: scroll; 
-	height: 600px;
+	max-height: 600px;
 }
 
 .navbar {
