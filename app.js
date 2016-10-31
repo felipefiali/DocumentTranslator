@@ -81,11 +81,6 @@ app.post('/api/translate',  function(req, res, next) {
 		
 	  languageTranslator.translate(params, function(err, data) {
 	    if (err) {
-	    	console.log('err\n');
-	    	console.log(err.code);
-	    	console.log(err.error);
-	    	console.log(err);
-	    	
 	    	return next(err);
 	    } else {
 	    	res.json(data);
