@@ -4,10 +4,11 @@ function callDocumentConverter(documentId) {
 			return response.text();  
 		  })  
 		.then(function(text) {			
-			var convertedTextElement = document.getElementById('conversionResult');
-			
+			var convertedTextElement = document.getElementById('conversionResult');			
 			convertedTextElement.textContent = text;
-			convertedTextElement.style = "display: block;"; 
+
+			var convertedTextContainer = document.getElementById('conversionResultContainer');			
+			convertedTextContainer.style = "display: block;";
 			
 			translateContent(text);
 		  });

@@ -14,10 +14,11 @@ function translateContent(contentToBeTranslated) {
 		.then(function(translatedJSON) {
 			var text = translatedJSON['translations'][0]['translation']
 			
-			var translationResultElement = document.getElementById('translationResult');
-			
+			var translationResultElement = document.getElementById('translationResult');			
 			translationResultElement.textContent = text;
-			translationResultElement.style = "display: block;";
+			
+			var translationResultContainerElement = document.getElementById('translationResultContainer');	
+			translationResultContainerElement.style = "display: block;";
 			
 			return text; 
 		  });

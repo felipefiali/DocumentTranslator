@@ -6,6 +6,7 @@ var fs = require('fs');
 var watson = require('watson-developer-cloud');
 var LanguageTranslatorV2 = require('watson-developer-cloud/language-translator/v2');
 var bodyParser = require('body-parser')
+var cfenv = require('cfenv');
 
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
@@ -92,6 +93,14 @@ app.post('/api/translate',  function(req, res, next) {
 	  });
 	});
 
+var appEnv = cfenv.getAppEnv();
+
+app.listen(appEnv.port, '0.0.0.0', function() {
+	  // print a message when the server starts listening
+	  console.log("server starting on " + appEnv.url);
+	});
+
+/*
 app.listen(3000, function () {
   console.log('Listening on port 3000');
-});
+}); */
