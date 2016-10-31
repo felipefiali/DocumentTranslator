@@ -9,7 +9,8 @@
     "express-secure-only": "^0.2.1",
     "helmet": "^0.15.0",
     "multer": "^1.2.0",
-    "watson-developer-cloud": "~2.4.5"
+    "watson-developer-cloud": "~2.4.5",
+    "cfenv": "1.0.x"    
   },
   "repository": {
     "type": "git",
