@@ -91,12 +91,6 @@ app.post('/api/translate',  function(req, res, next) {
 var appEnv = cfenv.getAppEnv();
 
 
-app.listen(appEnv.port, '0.0.0.0', function() {
-	  // print a message when the server starts listening
+app.listen(appEnv.port, '0.0.0.0', function() {	 
 	  console.log("server starting on " + appEnv.url);
 	});
-
-/*
-app.listen(3000, function () {
-  console.log('Listening on port 3000');
-}); */

@@ -48,7 +48,7 @@ body {
 }
 
 .small-help {
-	font-size: 0.9em;
+	font-size: 0.7em;
 }
 
 .overflow-with-scroll {
@@ -63,4 +63,14 @@ body {
 	font-size: 1.2em;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+}
+
+.error-message {
+	color: #D8000C;
+	background-color: #FFBABA;
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
 }

@@ -16,23 +16,16 @@ The application is already deployed to http://documenttranslator.mybluemix.net, 
 	```node
     $ npm install
     ```
-	
-4. Uncomment the following lines of code in app.js:
 
-	```node
-	/*
-	app.listen(3000, function () {
-	console.log('Listening on port 3000');
-	}); */
-	```
-	
-5. Run the application with the following command:
+4. Run the application with the following command:
 
     ```node
     node app.js
     ```
 	
-6. Open your browser on http://localhost:3000
+5. Open your browser on the URL that shows up on the log:
+
+    server starting on http://localhost:6001
 
 ## License
 
