@@ -1,8 +1,6 @@
 # DocumentTranslator
 The Document Translator sample application was developed based on Node.JS and it uses a lot of JavaScript and AJAX. It also uses two Bluemix Watson services: The Language Translator and the Document Conversion services. It integrates both of them to create a simple way to translate .doc, .docx, .pdf or .html documents from english to portuguese.
 
-The application is already deployed to http://documenttranslator.mybluemix.net, but you can also run it locally.
-
 ## Run locally:
 
 
