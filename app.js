@@ -20,10 +20,14 @@ var uploadFolder = "uploads";
 
 
 var documentConversion = new watson.DocumentConversionV1({
-    version_date: '2015-12-01'
+		// username: <your_username>,
+		// password: <your_password>
+		version_date: '2015-12-01'
 });
 
 var languageTranslator = new LanguageTranslatorV2({
+		// username: <your_username>,
+		// password: <your_password>
 		url: 'https://gateway.watsonplatform.net/language-translator/api'
 	});
 
