@@ -20,15 +20,11 @@ var uploadFolder = "uploads";
 
 
 var documentConversion = new watson.DocumentConversionV1({
-    username: '5a309389-5341-40df-af05-3cbe03a0478e',
-    password: '7x5KCUYWCggp',
-    version_date: '2015-12-01',
+    version_date: '2015-12-01'
 });
 
 var languageTranslator = new LanguageTranslatorV2({
-    username: 'a28dd702-d7e0-4eef-a23c-a6629f186af4',
-    password: 'WVHL5niyHev0',
-    url: 'https://gateway.watsonplatform.net/language-translator/api'	
+		url: 'https://gateway.watsonplatform.net/language-translator/api'
 	});
 
 var upload = multer({

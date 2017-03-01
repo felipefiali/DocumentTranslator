@@ -1,8 +1,19 @@
+---
+declared-services:
+  my-document-conversion:
+    label: document_conversion
+    plan: standard
+  my-language-translator:
+    label: language_translator
+    plan: standard
 applications:
-- path: .
+- name: document-translator
+  command: npm start
+  path: .
   memory: 256M
   instances: 1
-  domain: mybluemix.net
-  name: DocumentTranslator
-  host: DocumentTranslator
-  disk_quota: 1024M
+  services:
+  - my-document-conversion
+  - my-language-translator
+  env:
+    NPM_CONFIG_PRODUCTION: false
